@@ -13,7 +13,35 @@
 		2E2A8C5D234FC6CC00540605 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E2A8C5B234FC6CC00540605 /* Main.storyboard */; };
 		2E2A8C5F234FC6CE00540605 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E2A8C5E234FC6CE00540605 /* Assets.xcassets */; };
 		2E2A8C62234FC6CE00540605 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E2A8C60234FC6CE00540605 /* LaunchScreen.storyboard */; };
+		2E2A8C70234FC7E600540605 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E2A8C6F234FC7E600540605 /* NotificationCenter.framework */; };
+		2E2A8C73234FC7E600540605 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2A8C72234FC7E600540605 /* TodayViewController.swift */; };
+		2E2A8C76234FC7E600540605 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E2A8C74234FC7E600540605 /* MainInterface.storyboard */; };
+		2E2A8C7A234FC7E600540605 /* CheckDarkMode.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2E2A8C6D234FC7E600540605 /* CheckDarkMode.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2E2A8C78234FC7E600540605 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E2A8C4A234FC6CC00540605 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E2A8C6C234FC7E600540605;
+			remoteInfo = CheckDarkMode;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2E2A8C7B234FC7E600540605 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2E2A8C7A234FC7E600540605 /* CheckDarkMode.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2E2A8C52234FC6CC00540605 /* CheckDarkModeWidget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheckDarkModeWidget.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +52,11 @@
 		2E2A8C5E234FC6CE00540605 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E2A8C61234FC6CE00540605 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2E2A8C63234FC6CE00540605 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E2A8C6D234FC7E600540605 /* CheckDarkMode.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CheckDarkMode.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E2A8C6F234FC7E600540605 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		2E2A8C72234FC7E600540605 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		2E2A8C75234FC7E600540605 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		2E2A8C77234FC7E600540605 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +67,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2E2A8C6A234FC7E600540605 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E2A8C70234FC7E600540605 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -41,6 +82,8 @@
 			isa = PBXGroup;
 			children = (
 				2E2A8C54234FC6CC00540605 /* CheckDarkModeWidget */,
+				2E2A8C71234FC7E600540605 /* CheckDarkMode */,
+				2E2A8C6E234FC7E600540605 /* Frameworks */,
 				2E2A8C53234FC6CC00540605 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				2E2A8C52234FC6CC00540605 /* CheckDarkModeWidget.app */,
+				2E2A8C6D234FC7E600540605 /* CheckDarkMode.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +111,24 @@
 			path = CheckDarkModeWidget;
 			sourceTree = "<group>";
 		};
+		2E2A8C6E234FC7E600540605 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2E2A8C6F234FC7E600540605 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2E2A8C71234FC7E600540605 /* CheckDarkMode */ = {
+			isa = PBXGroup;
+			children = (
+				2E2A8C72234FC7E600540605 /* TodayViewController.swift */,
+				2E2A8C74234FC7E600540605 /* MainInterface.storyboard */,
+				2E2A8C77234FC7E600540605 /* Info.plist */,
+			);
+			path = CheckDarkMode;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,15 +139,34 @@
 				2E2A8C4E234FC6CC00540605 /* Sources */,
 				2E2A8C4F234FC6CC00540605 /* Frameworks */,
 				2E2A8C50234FC6CC00540605 /* Resources */,
+				2E2A8C7B234FC7E600540605 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				2E2A8C79234FC7E600540605 /* PBXTargetDependency */,
 			);
 			name = CheckDarkModeWidget;
 			productName = CheckDarkModeWidget;
 			productReference = 2E2A8C52234FC6CC00540605 /* CheckDarkModeWidget.app */;
 			productType = "com.apple.product-type.application";
+		};
+		2E2A8C6C234FC7E600540605 /* CheckDarkMode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E2A8C7E234FC7E600540605 /* Build configuration list for PBXNativeTarget "CheckDarkMode" */;
+			buildPhases = (
+				2E2A8C69234FC7E600540605 /* Sources */,
+				2E2A8C6A234FC7E600540605 /* Frameworks */,
+				2E2A8C6B234FC7E600540605 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CheckDarkMode;
+			productName = CheckDarkMode;
+			productReference = 2E2A8C6D234FC7E600540605 /* CheckDarkMode.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -98,6 +179,9 @@
 				ORGANIZATIONNAME = "Matoria, Ashok";
 				TargetAttributes = {
 					2E2A8C51234FC6CC00540605 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					2E2A8C6C234FC7E600540605 = {
 						CreatedOnToolsVersion = 11.1;
 					};
 				};
@@ -116,6 +200,7 @@
 			projectRoot = "";
 			targets = (
 				2E2A8C51234FC6CC00540605 /* CheckDarkModeWidget */,
+				2E2A8C6C234FC7E600540605 /* CheckDarkMode */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +213,14 @@
 				2E2A8C62234FC6CE00540605 /* LaunchScreen.storyboard in Resources */,
 				2E2A8C5F234FC6CE00540605 /* Assets.xcassets in Resources */,
 				2E2A8C5D234FC6CC00540605 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E2A8C6B234FC7E600540605 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E2A8C76234FC7E600540605 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +237,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2E2A8C69234FC7E600540605 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E2A8C73234FC7E600540605 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2E2A8C79234FC7E600540605 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2E2A8C6C234FC7E600540605 /* CheckDarkMode */;
+			targetProxy = 2E2A8C78234FC7E600540605 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		2E2A8C5B234FC6CC00540605 /* Main.storyboard */ = {
@@ -161,6 +270,14 @@
 				2E2A8C61234FC6CE00540605 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		2E2A8C74234FC7E600540605 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E2A8C75234FC7E600540605 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -283,6 +400,7 @@
 		2E2A8C67234FC6CE00540605 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X3MJYQKU8R;
@@ -301,6 +419,7 @@
 		2E2A8C68234FC6CE00540605 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X3MJYQKU8R;
@@ -311,6 +430,44 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.matoria.CheckDarkModeWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2E2A8C7C234FC7E600540605 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X3MJYQKU8R;
+				INFOPLIST_FILE = CheckDarkMode/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.matoria.CheckDarkModeWidget.CheckDarkMode;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2E2A8C7D234FC7E600540605 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X3MJYQKU8R;
+				INFOPLIST_FILE = CheckDarkMode/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.matoria.CheckDarkModeWidget.CheckDarkMode;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -333,6 +490,15 @@
 			buildConfigurations = (
 				2E2A8C67234FC6CE00540605 /* Debug */,
 				2E2A8C68234FC6CE00540605 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E2A8C7E234FC7E600540605 /* Build configuration list for PBXNativeTarget "CheckDarkMode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E2A8C7C234FC7E600540605 /* Debug */,
+				2E2A8C7D234FC7E600540605 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
