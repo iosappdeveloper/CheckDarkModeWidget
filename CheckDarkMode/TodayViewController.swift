@@ -9,13 +9,32 @@
 import UIKit
 import NotificationCenter
 
+// Seems current APIs to disable dark mode in app target does not work in Todays Extension.
+// Futher, to make things worse the userInterfaceStyle values of traitCollection within the extension UI are based on main app.
 class TodayViewController: UIViewController, NCWidgetProviding {
         
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
         
+        if let label = view.subviews.first as? UILabel {
+            let text: String
+            switch self.traitCollection.userInterfaceStyle {
+            case .dark:
+                text = "Dark"
+            case .light:
+                text = "Light"
+            case .unspecified:
+                text = "unspecified"
+            @unknown default:
+                text = "unknown"
+            }
+            label.text = text
+            
+            label.textColor = UIColor.label
+            view.backgroundColor = UIColor.systemBackground
+        }
+    }
+    
     func widgetPerformUpdate(completionHandler: (@escaping (NCUpdateResult) -> Void)) {
         // Perform any setup necessary in order to update the view.
         
